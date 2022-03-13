@@ -31,5 +31,7 @@ config.dbConfig(config.cfg, (err) => {
         console.log(`Express server listening on ${process.env.PORT}`)
     });
 
-    require("./lib/middleware/cronHandler")
+    require('./lib/middleware/socketHandler').connect(server)
+
+    //require("./lib/middleware/cronHandler")
 });
