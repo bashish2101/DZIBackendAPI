@@ -33,5 +33,5 @@ config.dbConfig(config.cfg, (err) => {
 
     require('./lib/middleware/socketHandler').connect(server)
 
-    //require("./lib/middleware/cronHandler")
+    require("./lib/middleware/cronHandler")
 });
